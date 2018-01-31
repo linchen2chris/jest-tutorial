@@ -1,0 +1,22 @@
+{
+  "name": "jest-tutorial",
+  "version": "1.0.0",
+  "description": "jest tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linchen2chris/jest-tutorial.git"
+  },
+  "keywords": [
+    "jest"
+  ],
+  "author": "lc1990linux@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/linchen2chris/jest-tutorial/issues"
+  },
+  "homepage": "https://github.com/linchen2chris/jest-tutorial#readme"
+}
