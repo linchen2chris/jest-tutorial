@@ -20,6 +20,11 @@
   },
   "homepage": "https://github.com/linchen2chris/jest-tutorial#readme",
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.1.0",
     "jest": "^22.1.4"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.6.1"
   }
 }
