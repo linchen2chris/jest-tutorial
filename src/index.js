@@ -1,14 +1,25 @@
 import http from 'http';
 
+import bodyParser from 'body-parser';
 import express from 'express';
 import morgan from 'morgan';
+
+import dishRouter from './routes/dishRouter';
 
 const app = express();
 app.use(morgan('dev'));
 app.use(express.static(__dirname + '/../public'));
-console.log('__dirname = ', __dirname);
 
-//this is default response
+app.use(bodyParser.json());
+app.use('/dishes', dishRouter);
+app.get('/dish/:dishId', (req, res, next) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('will send details of dish' + req.params.dishId + 'info');
+  next();
+});
+
+// this is default response
 app.use((req, res) => {
   // morgan will replace it to do log work.
   // console.log(req.headers);
